@@ -1,10 +1,9 @@
 def print_max(x, y):
-    '''
-    文本注释
+    '''文本注释.
+
     :param x:
     :param y:
-    :return:
-    '''
+    :return:'''
     # convert to integers, if possible
     x = int(x)
     y = int(y)
@@ -17,3 +16,4 @@ def print_max(x, y):
 
 print_max(3, 5)
 print(print_max.__doc__)
+help(print_max)
