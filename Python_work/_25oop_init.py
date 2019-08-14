@@ -42,7 +42,7 @@ class Robot:
         """Prints the current population."""
         print('Greetings,my masters call me {}.'.format(self.name))
 
-    # 属于类的方法
+    # 属于类的方法 所以实例对象共享
     @classmethod
     def how_many(cls):
         print('we have {:d} robots.'.format(cls.population))
