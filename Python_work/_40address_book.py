@@ -29,12 +29,17 @@ while True:
         a = address_book(name, phone, address)
         address_list[a.name] = a.getDetail()
         print('new:', address_list)
-        f = open(addressFile, 'ab+')
+        f = open(addressFile, 'wb')
         pickle.dump(address_list, f)
         f.close()
         with open(addressFile, 'rb') as f:
             print(pickle.load(f))
+
     elif ctr == 'del':
         print('....')
+    elif ctr =='exit':
+        print('bye~')
+        break
     else:
-        print('i dont know')
+        with open(addressFile, 'rb') as f:
+            print(pickle.load(f))
