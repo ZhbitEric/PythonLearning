@@ -14,7 +14,11 @@ print(ab)
 for name, address in ab.items():
     print('Contact {} at {}'.format(name, address))
 
+# 增加
 ab['google'] = 'google.com'
 if 'google' in ab:
     print(ab['google'])
 
+# 删除
+ab.pop('Larry')
+print(ab)
